@@ -25,7 +25,17 @@
             android:layout_weight="1"
             android:text="Match"/>
 
-
+        <TextView
+            android:id="@+id/deviceAuto_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Device:"/>
     </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
 
 </LinearLayout>
