@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:id="@+id/matchHomeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.MatchHome">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/setupMatchHeader_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setupMatchHeader_textView"
+        android:textSize="45sp"
+        android:textAlignment="center"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/selectMatch_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectMatch_textView"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/matchHomeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/minusMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightRed"
+            android:ems="8"
+            android:text="-"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/matchNumber_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:text="@string/matchNumber_textView"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/minusMatch"
+            app:layout_constraintStart_toEndOf="@+id/plusMatch"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/plusMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/lightGreen"
+            android:ems="8"
+            android:text="+"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp" />
+
+    <TextView
+        android:id="@+id/teamScoutingQuestion_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teamScoutingQuestion_textView"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/startMatchScoutingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cornflowerBlue"
+        android:text="@string/startMatchScoutingButton" />
+</LinearLayout>

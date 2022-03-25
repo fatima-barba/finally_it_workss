@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">finally_it_works</string>
+    <string name="startMatchScoutingButton">Start Match</string>
+    <string name="teamScoutingQuestion_textView">Select Team To Scout</string>
+    <string name="matchNumber_textView">Match</string>
+    <string name="selectMatch_textView">Select Match</string>
+    <string name="setupMatchHeader_textView">Setup Match</string>
+    <string name="teamAuto_textView">Teams:</string>
+    <string name="autoMatch_textView">Match</string>
+    <string name="deviceAuto_textView">Device:</string>
+    <string name="upper_hubAutoHeader_textView">Upper Hub</string>
+    <string name="upperScoreAuto_textView">Score</string>
+    <string name="scoreQuestionAuto_textView">Score</string>
+    <string name="taxiing_checkBox">Taxiing</string>
+    <string name="humanPlayerLower_checkBox">Human Player Lower Hub</string>
+    <string name="lower_hubAuto_checkBox">Lower Hub</string>
+    <string name="lowerHubAutoHeader_textView">Lower Hub</string>
+    <string name="lowerScoreAuto_textView">Score</string>
 </resources>
